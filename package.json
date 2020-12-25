@@ -1,0 +1,92 @@
+{
+  "name": "nano-cms",
+  "version": "0.3.0",
+  "description": "nano CMS project.",
+  "author": "HellDiver",
+  "license": "ISC",
+  "main": "server.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development nodemon",
+    "dev:nowatch": "cross-env NODE_ENV=development node_modules/.bin/ts-node ./index.ts",
+    "build": "node_modules/.bin/tsc"
+  },
+  "dependencies": {
+    "@hapi/joi": "^15.1.0",
+    "cross-env": "^5.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "koa": "^2.7.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-jwt": "^3.6.0",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0",
+    "lodash": "^4.17.15",
+    "lowdb": "^1.0.0",
+    "moment": "^2.24.0",
+    "node-cron": "^2.0.3",
+    "path": "^0.12.7",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "@koa/cors": "^3.0.0",
+    "@types/hapi__joi": "^15.0.2",
+    "@types/jest": "^24.0.15",
+    "@types/jsonwebtoken": "^8.3.7",
+    "@types/koa": "^2.11.2",
+    "@types/koa-bodyparser": "^4.2.2",
+    "@types/koa-router": "^7.0.40",
+    "@types/koa-static": "^4.0.1",
+    "@types/lodash": "^4.14.136",
+    "@types/lowdb": "^1.0.9",
+    "@types/node-cron": "^2.0.2",
+    "@types/supertest": "^2.0.8",
+    "@types/uuid": "^3.4.4",
+    "jest": "^24.8.0",
+    "nodemon": "^1.19.0",
+    "supertest": "^4.0.2",
+    "ts-jest": "^24.0.2",
+    "ts-node": "^8.1.0",
+    "tslint": "^5.16.0",
+    "typescript": "^3.4.5"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "jsx",
+      "json",
+      "ts",
+      "tsx"
+    ],
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "**/*.{ts,js}",
+      "!**/node_modules/**",
+      "!**/build/**",
+      "!**/release/**",
+      "!**/public/**",
+      "!**/coverage/**"
+    ],
+    "transform": {
+      "\\.ts$": "ts-jest"
+    },
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    },
+    "coverageReporters": [
+      "text",
+      "text-summary"
+    ],
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(js|ts)x?$",
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/release/",
+      "/build/",
+      "/public/",
+      "/coverage/"
+    ]
+  }
+}

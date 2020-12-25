@@ -1,0 +1,20 @@
+{
+  "users": [
+    {
+      "uid": "46ea4c83-375c-4643-962f-e2456c8b38a3",
+      "createdAt": 1563245646060,
+      "email": "admin@hngf.com.tw",
+      "name": "Administrator",
+      "password": "b886f03953d29e06e741ff8c2128c434be5a68ad7ad86558902e952a810045d5",
+      "gender": "unknown",
+      "isVIP": true,
+      "credit": 2000,
+      "remark": "This is admin and password is admin.",
+      "tokens": [
+        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MDg5Njc3NjksImRhdGEiOnsidWlkIjoiNDZlYTRjODMtMzc1Yy00NjQzLTk2MmYtZTI0NTZjOGIzOGEzIn0sImlhdCI6MTYwODg4MTM2OX0.hT4uBtikECbs9QI9_YgLYX73OI0TPB5yYUh_YwspvrY"
+      ]
+    }
+  ],
+  "orders": [],
+  "lottery29": []
+}

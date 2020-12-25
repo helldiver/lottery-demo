@@ -1,0 +1,9 @@
+# Dependency directories
+node_modules
+
+# Release directory
+release
+
+# Development config
+config/**
+!config/index.ts
